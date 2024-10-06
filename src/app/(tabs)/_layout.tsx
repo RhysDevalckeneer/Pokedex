@@ -1,7 +1,7 @@
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { Tabs } from 'expo-router';
 
-import { TabBarIcon, TabBarLabel } from '@components/index';
+import { BottomTabBarIcon, BottomTabBarLabel } from '@components/index';
 import { backgroundColors, textColor } from '@theme/colors';
 
 export default function TabLayout() {
@@ -26,9 +26,9 @@ export default function TabLayout() {
           title: 'Home',
           headerShown: false,
           tabBarLabelStyle: { fontWeight: 500 },
-          tabBarIcon: ({ color }) => <TabBarIcon iconName="home" iconSize={26} color={color}/>,
+          tabBarIcon: ({ color }) => <BottomTabBarIcon iconName="home" iconSize={26} color={color}/>,
           tabBarIconStyle: { marginBottom: -8 },
-          tabBarLabel: ({ color }) => <TabBarLabel label="Home" color={color} size={12}/>,
+          tabBarLabel: ({ color }) => <BottomTabBarLabel label="Home" color={color} size={12}/>,
         }}
       />
       <Tabs.Screen
@@ -36,9 +36,9 @@ export default function TabLayout() {
         options={{
           title: 'Search',
           headerShown: false,
-          tabBarIcon: ({ color }) => <TabBarIcon iconName="search" iconSize={26} color={color}/>,
+          tabBarIcon: ({ color }) => <BottomTabBarIcon iconName="search" iconSize={26} color={color}/>,
           tabBarIconStyle: { marginBottom: -8 },
-          tabBarLabel: ({ color }) => <TabBarLabel label="Search" color={color} size={12}/>,
+          tabBarLabel: ({ color }) => <BottomTabBarLabel label="Search" color={color} size={12}/>,
         }}
       />
       <Tabs.Screen
@@ -46,9 +46,9 @@ export default function TabLayout() {
         options={{
           title: 'List',
           headerShown: false,
-          tabBarIcon: ({ color }) => <TabBarIcon iconName="grid" iconSize={26} color={color}/>,
+          tabBarIcon: ({ color }) => <BottomTabBarIcon iconName="grid" iconSize={26} color={color}/>,
           tabBarIconStyle: { marginBottom: -8 },
-          tabBarLabel: ({ color }) => <TabBarLabel label="List" color={color} size={12}/>,
+          tabBarLabel: ({ color }) => <BottomTabBarLabel label="List" color={color} size={12}/>,
         }}
       />
       <Tabs.Screen
@@ -58,7 +58,7 @@ export default function TabLayout() {
           headerShown: false,
           tabBarIcon: ({ color }) => <AntDesign name="setting" size={26} color={color} />,
           tabBarIconStyle: { marginBottom: -8 },
-          tabBarLabel: ({ color }) => <TabBarLabel label="Settings" color={color} size={12}/>,
+          tabBarLabel: ({ color }) => <BottomTabBarLabel label="Settings" color={color} size={12}/>,
         }}
       />
     </Tabs>

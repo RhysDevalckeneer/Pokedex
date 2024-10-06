@@ -1,13 +1,13 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-interface TabBarLabelProps {
+interface BottomTabBarLabelProps {
     label: string;
     color: any;
     size: number;
 }
 
-const TabBarLabel = ({ label, color, size }: TabBarLabelProps) => (
+const BottomTabBarLabel = ({ label, color, size }: BottomTabBarLabelProps) => (
     <Text
         style={{
             color,
@@ -18,4 +18,4 @@ const TabBarLabel = ({ label, color, size }: TabBarLabelProps) => (
     </Text>
 );
 
-export default TabBarLabel;
+export default BottomTabBarLabel;

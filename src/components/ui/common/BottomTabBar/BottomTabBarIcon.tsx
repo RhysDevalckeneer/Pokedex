@@ -1,13 +1,13 @@
 import React from 'react';
 import Feather from '@expo/vector-icons/Feather';
 
-interface TabBarIconProps {
+interface BottomTabBarIconProps {
     iconName: any;
     iconSize: number;
     color: any;
 }
 
-const TabBarIcon = ({ color, iconName, iconSize }: TabBarIconProps) => (
+const BottomTabBarIcon = ({ color, iconName, iconSize }: BottomTabBarIconProps) => (
     <Feather
         name={iconName}
         size={iconSize}
@@ -15,4 +15,4 @@ const TabBarIcon = ({ color, iconName, iconSize }: TabBarIconProps) => (
     />
 );
 
-export default TabBarIcon;
+export default BottomTabBarIcon;
