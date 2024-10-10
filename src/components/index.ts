@@ -1,5 +1,6 @@
-// Lauyout 
-// import { SafeAreaViewContainer } from './layout/common/SafeAreaViewContainer';
+// Lauyout x
+export { default as SafeAreaViewContainer } from './layout/common/SafeAreaViewContainer';
 
 // Components
-// import { Button } from './components/common/Button';
+export { default as BottomTabBarIcon } from './ui/common/BottomTabBar/BottomTabBarIcon';
+export { default as BottomTabBarLabel } from './ui/common/BottomTabBar/BottomTabBarLabel';
